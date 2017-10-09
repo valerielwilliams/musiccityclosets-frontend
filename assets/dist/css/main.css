@@ -1004,7 +1004,7 @@ textarea#feedback {
   height: 150px;
   display: block; }
 
-button {
+/*button {
   width: 100px;
   position: absolute;
   right: 20px;
@@ -1013,12 +1013,13 @@ button {
   color: #fff;
   height: 30px;
   border-radius: 15px;
-  border: 1p solid #999; }
+  border: 1p solid #999;
+}
 
 input.button:hover {
   background: #fff;
-  color: #09C; }
-
+  color: #09C;
+}*/
 /*------------------------------------*    #PAGES
 \*------------------------------------*/
 /* space between intro and about section */
