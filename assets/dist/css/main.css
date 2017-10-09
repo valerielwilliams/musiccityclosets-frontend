@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------*    #TABLE-OF-CONTENTS
     When in doubt, follow http://cssguidelin.es/
 \*------------------------------------*/
@@ -400,6 +401,16 @@ template {
 [hidden] {
   display: none; }
 
+/*------------------------------------*    #GRID-SETTINGS
+\*------------------------------------*/
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative; }
+
 /*------------------------------------*    #WORDPRESS-CORE
 \*------------------------------------*/
 .alignnone {
@@ -465,6 +476,90 @@ a img.aligncenter {
 \*------------------------------------*/
 /*------------------------------------*    #ANIMATIONS
 \*------------------------------------*/
+/* Testimonials animation - courtesy of Paul Radzkov http://cssdeck.com/labs/tu1e6uq5*/
+.tsl-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden; }
+
+.tsl-item {
+  position: relative;
+  top: 0;
+  left: 100%;
+  margin-left: -100%;
+  width: 100%;
+  float: left;
+  -webkit-animation: tsl-fade-in-out 25s infinite;
+  animation: tsl-fade-in-out 25s infinite;
+  -webkit-animation-play-state: running;
+  animation-play-state: running; }
+
+/* lets hide all items from second */
+.tsl-item + .tsl-item {
+  opacity: 0; }
+
+/* animation */
+/* animation shift */
+/* negative delay needed to pause works correctly on hover */
+.tsl-item:nth-child(2) {
+  -webkit-animation-delay: -20s;
+  animation-delay: -20s; }
+
+.tsl-item:nth-child(3) {
+  -webkit-animation-delay: -15s;
+  animation-delay: -15s; }
+
+.tsl-item:nth-child(4) {
+  -webkit-animation-delay: -10s;
+  animation-delay: -10s; }
+
+.tsl-item:nth-child(5) {
+  -webkit-animation-delay: -5s;
+  animation-delay: -5s; }
+
+/*
+we have 5 items.
+we want each slide plays ≈5s
+
+each slide will play 1/5 of animation = 20%
+1% of animation is for transitions (fading)
+*/
+@-webkit-keyframes tsl-fade-in-out {
+  0% {
+    opacity: 0;
+    z-index: 2; }
+  1% {
+    opacity: 1;
+    z-index: 2; }
+  20% {
+    opacity: 1; }
+  21% {
+    opacity: 0;
+    z-index: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes tsl-fade-in-out {
+  0% {
+    opacity: 0;
+    z-index: 2; }
+  1% {
+    opacity: 1;
+    z-index: 2; }
+  20% {
+    opacity: 1; }
+  21% {
+    opacity: 0;
+    z-index: 1; }
+  100% {
+    opacity: 0; } }
+
+/* pause on hover */
+.tsl-list:hover .tsl-item {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused; }
+
 /*------------------------------------*    #EXTENDS
 \*------------------------------------*/
 /*------------------------------------*    #MIXINS
@@ -624,14 +719,167 @@ input[type=submit] {
 \*------------------------------------*/
 /*------------------------------------*    #BUTTONS
 \*------------------------------------*/
+/* Schedule a free consultation button - There must be a better way to get the background
+and font color to change simultaneously on hover, probably with an Event Handler in JavaScript
+or something. I'll research later.*/
+.intro button,
+.about_clarks button {
+  background: #2e5c8e;
+  padding: 20px 0px; }
+  .intro button a,
+  .about_clarks button a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px; }
+  .intro button a:hover,
+  .about_clarks button a:hover {
+    background: #ffffff;
+    color: #1fa5ce; }
+
 /*------------------------------------*    #LAYOUT
 \*------------------------------------*/
 /*------------------------------------*    #HEADER
 \*------------------------------------*/
+header {
+  grid-column: 1 / span 12;
+  font-family: "sofia-pro";
+  color: #000000;
+  position: relative; }
+
+/*------------------------------------*    #LOGO
+\*------------------------------------*/
+.logo {
+  margin-top: 25px; }
+
+/*------------------------------------*    #ADDRESS
+\*------------------------------------*/
+.vcard {
+  font-weight: 500;
+  font-size: 1.125em;
+  position: absolute;
+  top: 8.5%;
+  left: 80%; }
+
+.tel {
+  margin: 10px 0 10px 0; }
+
+.vcard a:link {
+  color: #1fa5ce;
+  text-decoration: none; }
+
+.vcard a:hover {
+  color: #1fa5ce;
+  text-decoration: underline; }
+
 /*------------------------------------*    #NAV
 \*------------------------------------*/
+.nav {
+  margin-top: 20px; }
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .nav ul > li {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      font-weight: 600;
+      font-size: 1.25em;
+      text-align: center; }
+      .nav ul > li > a {
+        color: #000000;
+        text-decoration: none; }
+        .nav ul > li > a:hover {
+          background: #c7b299;
+          color: #000000; }
+
+/*------------------------------------*    #CONTENT
+\*------------------------------------*/
+.main {
+  grid-column: 1 / span 12;
+  font-family: "sofia-pro"; }
+
+h1.hidden {
+  visibility: hidden; }
+
+h2 {
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 50px 0 50px 0; }
+
+p {
+  font-weight: 500;
+  font-size: 1.125em;
+  line-height: 1.25em; }
+
+a:link, a:visited {
+  color: #1fa5ce;
+  text-decoration: none; }
+
+a:hover {
+  color: #1fa5ce;
+  text-decoration: underline; }
+
+.intro p {
+  margin-bottom: 40px; }
+
+/* cards for closets, garages and small spaces pages */
+.card-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/* styling for testimonials on index and about pages */
+.testimonials p {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 2.25em; }
+
 /*------------------------------------*    #FOOTER
 \*------------------------------------*/
+.footer {
+  grid-column: 1 / span 12;
+  font-family: "sofia-pro";
+  font-size: 1.75em;
+  background: #000000;
+  color: white;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 40px; }
+  .footer a {
+    color: #c7b299; }
+    .footer a:hover {
+      color: #2e5c8e; }
+  .footer__social-media {
+    margin: 10px 10px 5px 0; }
+    .footer__social-media svg {
+      fill: currentColor;
+      height: 75px;
+      width: 75px;
+      padding-left: 20px; }
+
 /*------------------------------------*    #PIECES
 \*------------------------------------*/
 /*------------------------------------*    #GRAVITY-FORMS
@@ -646,7 +894,175 @@ input[type=submit] {
 
 	** Just remember, these are set up as extends and not as actual class names **
 \*------------------------------------*/
+/*------------------------------------*    #SOCIAL-MEDIA
+\*------------------------------------*/
+ul.social-media {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+li {
+  float: left; }
+
+/*------------------------------------*    HOVER EFFECT ON HOME PAGE IMGS
+\*------------------------------------*/
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.design__img:hover .image {
+  opacity: 0.3; }
+
+/*------------------------------------*    BACK TO TOP BUTTON
+\*------------------------------------*/
+.cd-top.cd-is-visible {
+  visibility: visible;
+  opacity: 1; }
+
+.cd-top.cd-fade-out {
+  opacity: 0.5; }
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  /* image replacement properties */
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(46, 92, 142, 0.8) url(/assets/dist/img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  -o-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s; }
+
+.cd-top.cd-is-visible,
+.cd-top.cd-fade-out,
+.no-touch .cd-top:hover {
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -o-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s; }
+
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1; }
+
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: 0.5; }
+
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1; }
+
+/*------------------------------------*    FORM courtesy of https://www.sitepoint.com/style-web-forms-css/
+\*------------------------------------*/
+form {
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -o-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  margin: auto;
+  position: relative;
+  width: 550px;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center; }
+
+input {
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3); }
+
+textarea#feedback {
+  width: 375px;
+  height: 150px;
+  display: block; }
+
+button {
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #09C;
+  color: #fff;
+  height: 30px;
+  border-radius: 15px;
+  border: 1p solid #999; }
+
+input.button:hover {
+  background: #fff;
+  color: #09C; }
+
 /*------------------------------------*    #PAGES
 \*------------------------------------*/
-.home {
-  background: black; }
+/* space between intro and about section */
+.welcome p {
+  margin-bottom: 40px; }
+
+/* About Wayne and Cece */
+.about_clarks {
+  background: #c7b299;
+  padding: 20px; }
+
+.about_clarks h2 {
+  text-align: left; }
+
+.about_clarks img {
+  float: right;
+  padding-left: 20px; }
+
+/* Let Wayne and Cece design something for you*/
+.design-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/*------------------------------------*    GALLERY
+\*------------------------------------*/
+.gallery_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  justify-items: center; }
+
+/*------------------------------------*    BLOG
+\*------------------------------------*/
+.blog_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 40px; }

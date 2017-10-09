@@ -9,6 +9,7 @@ $font-path          : "#{$baseurl}/assets/dist/fonts";
 
 /* COLORS */
 $lightNavyBlue        : #2e5c8e;
+$brightblue           : #1fa5ce;
 $putty                : #c7b299;
 $black                : #000000;
 $white                : #ffffff;
@@ -16,6 +17,14 @@ $white                : #ffffff;
 
 /* FONTS */
 $sofia                : "sofia-pro";
+
+$extralight    :200;
+$light         :300;
+$regular       :400;
+$medium        :500;
+$semibold      :600;
+
+$style-italic         :italic;
 
 
 $mobile-padding       : 20px;

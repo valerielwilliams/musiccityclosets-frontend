@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    #CONTENT
+\*------------------------------------*/
+.main {
+    grid-column: 1 / span 12;
+    font-family: $sofia;
+}
+
+
+h1.hidden{
+    visibility: hidden;
+}
+
+h2 {
+    font-weight: $regular;
+    font-size: em(24px);
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
+
+
+p {
+    font-weight: $medium;
+    font-size: em(18px);
+    line-height: 1.25em;
+}
+
+a:link, a:visited {
+	color: $brightblue;
+	text-decoration: none;
+}
+
+a:hover {
+	color: $brightblue;
+	text-decoration: underline;
+}
+
+
+.intro p {
+    margin-bottom: 40px;
+}
+
+
+/* cards for closets, garages and small spaces pages */
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* styling for testimonials on index and about pages */
+
+.testimonials p {
+    font-weight: $extralight;
+    font-style: $style-italic;
+    font-size: em(36px);
+}

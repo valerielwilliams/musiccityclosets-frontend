@@ -1,3 +1,25 @@
 /*------------------------------------*\
     #BUTTONS
 \*------------------------------------*/
+/* Schedule a free consultation button - There must be a better way to get the background
+and font color to change simultaneously on hover, probably with an Event Handler in JavaScript
+or something. I'll research later.*/
+.intro button,
+.about_clarks button {
+    background: $button;
+    padding: 20px 0px;
+
+
+
+     a {
+        color: $buttonfont;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+        a:hover {
+            background: $buttonfont;
+            color: $brightblue;
+        }
+
+}

@@ -1,0 +1,13 @@
+/*------------------------------------*\
+    BLOG
+\*------------------------------------*/
+
+.blog_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  justify-items: center;
+  margin-top: 40px;
+
+ }

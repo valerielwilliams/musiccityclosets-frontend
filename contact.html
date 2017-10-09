@@ -63,50 +63,48 @@
     <main class="main">
         <!--Hero-->
         <div class="hero">
-            <h1 class="hidden">Closets you'll want to live in</h1><!--h1 for semantics only-->
-                <img src="/assets/dist/img/closet_home.jpg" alt="closets">
+            <h1 class="hidden">About us</h1><!--h1 for semantics only-->
+                <img src="/assets/dist/img/contact.jpg" alt="contact us">
         </div>
 
 
-        <!--Welcome-->
-        <div class="welcome">
-            <h2>Welcome to Music City Closets, your key to organization.</h2>
-            <p>Our designers are ready to help you with all of your organization
-            needs, from simple pantries to elaborate walk-in closets and everything
-            in between. <a href="contact.html">Contact</a> us today for a free consultation with one of our
-            designers.</p>
+        <!--Intro-->
+        <div class="intro">
+            <h2>Let Wayne and Cece design a storage solution just for you.</h2>
         </div>
 
+        <div>
+            <form action="/action_page.php">
+                <label>
+                    <p>Name<input id="name" type="text" name="name" placeholder="First Name and Last Name, please"/></p>
+                </label>
 
-        <!--About-->
-        <div class="about_clarks">
-            <img src="/assets/dist/img/gaines.jpg" alt="gaines family" width="450"/>
-            <h2>About Wayne and Cece</h2>
-            <p>Wayne Clark and his wife Cece have been designing custom closets for
-            clients all over the United States since April of 1987.  After building
-            a very successful and reputable closet design business in Central Florida,
-            Wayne and his wife discovered and fell in love with middle Tennessee and
-            the Nashville area back in 2006.  Wayne and Cece love all that Nashville
-            offers and they look forward to earning your business.</p>
-            <button><a href="contact.html">SCHEDULE A FREE CONSULTATION</a></button>
-        </div>
+                <label>
+                    <p>Street Address<input id="address" type="text" name="street_address" placeholder="Street Address"/></p>
+                </label>
 
+                <label>
+                    <p>City<input id="city" type="text" name="city"/></p>
+                </label>
 
+                <label>
+                    <p>State<input id="state" type="text" name="state"/></p>
+                </label>
 
-        <!--Let Wayne and Cece design something for you-->
-        <div class="design">
-            <h2>Let Wayne and Cece design something for you</h2>
-            <div class="design-wrapper">
-                <div class="design__img">
-                    <a href="closets.html"><img src="/assets/dist/img/closet_small.jpg" alt="closet" class="image" width="288"/></a>
-                </div>
-                <div class="design__img">
-                    <a href="garages.html"><img src="/assets/dist/img/garage_small.jpg" alt="garage" class="image" width="288"/></a>
-                </div>
-                <div class="design__img">
-                    <a href="small_spaces.html"><img src="/assets/dist/img/ss_small.jpg" alt="small spaces" class="image" width="288"/></a>
-                 </div>
-            </div>
+                <label>
+                    <p>Zip Code<input id="zip_code" type="text" name="zip_code"/></p>
+                </label>
+
+                <label>
+                    <p>Email Address<input id="email" type="text" name="email" /></p>
+                </label>
+
+                <label>
+                    <p>How can we help you?<textarea id="feedback" name="feedback"></textarea></p>
+                    <input type="button" value="Submit Form" />
+                </label>
+  </form>
+
         </div>
 
 

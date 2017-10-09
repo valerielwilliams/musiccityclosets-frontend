@@ -1,3 +1,32 @@
 .home {
-    background: black;
+
+}
+
+/* space between intro and about section */
+.welcome p {
+    margin-bottom: 40px;
+}
+
+
+/* About Wayne and Cece */
+.about_clarks {
+    background: $accent;
+    padding: 20px;
+}
+
+.about_clarks h2 {
+    text-align: left;
+}
+
+.about_clarks img {
+    float: right;
+    padding-left: 20px;
+ }
+
+/* Let Wayne and Cece design something for you*/
+
+.design-wrapper {
+     display: flex;
+     justify-content: space-between;
+
 }

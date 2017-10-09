@@ -1,0 +1,8 @@
+/*------------------------------------*    GALLERY
+\*------------------------------------*/
+.gallery_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*creates three even columns*/
+  grid-template-rows: auto;
+  grid-gap: 10px; }

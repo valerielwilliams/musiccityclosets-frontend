@@ -3,26 +3,79 @@
 \*------------------------------------*/
 
 header {
+	grid-column: 1 / span 12;
+	font-family: $sofia;
+	color: $primary;
+	position: relative;
 
 }
 
+/*------------------------------------*\
+    #LOGO
+\*------------------------------------*/
 
+.logo {
+	margin-top: 25px;
 
+}
 
+/*------------------------------------*\
+    #ADDRESS
+\*------------------------------------*/
+
+.vcard {
+	font-weight: $medium;
+	font-size: em(18px);
+	position: absolute;
+	top: 8.5%;
+	left: 80%;
+}
+
+.tel {
+	margin: 10px 0 10px 0;
+}
+
+.vcard a:link {
+	color: $brightblue;
+	text-decoration: none;
+}
+
+.vcard a:hover{
+	color: $brightblue;
+	text-decoration: underline;
+}
 
 /*------------------------------------*\
     #NAV
 \*------------------------------------*/
 
 .nav {
+	margin-top: 20px;
 
 	ul {
-		
+		@include no-bullets;
+		display: flex;
+
+
+
 		> li {
+			flex: 1;
+			font-weight: $semibold;
+			font-size: em(20px);
+			text-align: center;
+
+
+
 
 			> a {
+				color: $primary;
+				text-decoration: none;
+
 
 				&:hover {
+					background: $accent;
+					color: $primary;
+
 				}
 			}
 		}

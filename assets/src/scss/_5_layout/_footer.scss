@@ -2,8 +2,43 @@
     #FOOTER
 \*------------------------------------*/
 .footer {
+	grid-column: 1 / span 12;
+	font-family: $sofia;
+	font-size: em(28px);
+	background: $primary;
+	color: white;
+	padding-left: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 40px;
+
+
+
+	a {
+		color: $accent;
+
+		&:hover {
+			color: $button;
+		}
+	}
+
+	&__social-media {
+
+		margin: 10px 10px 5px 0;
+
+		svg {
+			fill: currentColor;
+			height: 75px;
+			width: 75px;
+			padding-left: 20px;
+		}
+	}
+
+
+
 
 	.copyright {
-		
+
 	}
 }
