@@ -6,10 +6,25 @@
     font-family: $sofia;
 }
 
+.hero_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 
-h1.hidden{
+.hero_container h1 {
+  position: absolute;
+  color: $white;
+  font-size: em(50px);
+  font-weight: $regular;
+  background: rgba(0,0,0, 0.5);
+  padding: 10px;
+ }
+
+
+/* h1.hidden{
     visibility: hidden;
-}
+} */
 
 h2 {
     font-weight: $regular;
@@ -45,9 +60,27 @@ a:hover {
 
 .card-wrapper {
     display: flex;
-    justify-content: space-between;
-
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
+.card__img {
+    flex: 0 0 calc(33.33% - 30px);   /* courtesy of Stack Overflow at https://stackoverflow.com/questions/37461794/aligning-images-on-two-rows-with-flexbox */
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__img p {
+    position: absolute;
+    color: $white;
+    font-size: em(40px);
+    font-weight: $light;
+    background: rgba(0,0,0, 0.5);
+    padding: 10px;
+}
+
 
 /* styling for testimonials on index and about pages */
 
@@ -55,4 +88,25 @@ a:hover {
     font-weight: $extralight;
     font-style: $style-italic;
     font-size: em(36px);
+    padding: 50px;
+}
+
+.testimonials p::before, .testimonials p::after {
+    content: "“";
+    position: absolute;
+    color: $putty;
+    font-size: em(100px);
+}
+
+
+.testimonials p::before {
+    top: 5rem;
+    left: -2rem;
+    z-index: -1;
+}
+
+.testimonials p::after {
+    content: "”";
+    bottom: 1rem;
+    right: 3rem;
 }
