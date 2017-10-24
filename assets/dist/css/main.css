@@ -719,23 +719,6 @@ input[type=submit] {
 \*------------------------------------*/
 /*------------------------------------*    #BUTTONS
 \*------------------------------------*/
-/* Schedule a free consultation button - There must be a better way to get the background
-and font color to change simultaneously on hover, probably with an Event Handler in JavaScript
-or something. I'll research later.*/
-.intro button,
-.about_clarks button {
-  background: #2e5c8e;
-  padding: 20px 0px; }
-  .intro button a,
-  .about_clarks button a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 20px; }
-  .intro button a:hover,
-  .about_clarks button a:hover {
-    background: #ffffff;
-    color: #1fa5ce; }
-
 /*------------------------------------*    #LAYOUT
 \*------------------------------------*/
 /*------------------------------------*    #HEADER
@@ -798,6 +781,10 @@ header {
           background: #c7b299;
           color: #000000; }
 
+.contact a {
+  border: 2px solid #1fa5ce;
+  padding: 5px; }
+
 /*------------------------------------*    #CONTENT
 \*------------------------------------*/
 .main {
@@ -850,6 +837,22 @@ a:hover {
 
 .intro p {
   margin-bottom: 40px; }
+
+/*buttons for scheduling a consultation on home and about us pages */
+.consult {
+  text-align: center; }
+
+.consult a {
+  text-decoration: none;
+  background: #2e5c8e;
+  color: #ffffff;
+  padding: 10px; }
+
+.consult a:hover {
+  border-style: solid;
+  border-color: #2e5c8e;
+  background: #ffffff;
+  color: #2e5c8e; }
 
 /* cards for closets, garages and small spaces pages */
 .card-wrapper {

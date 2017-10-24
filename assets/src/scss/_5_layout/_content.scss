@@ -55,6 +55,25 @@ a:hover {
     margin-bottom: 40px;
 }
 
+/*buttons for scheduling a consultation on home and about us pages */
+.consult {
+    text-align: center;
+}
+
+
+.consult a {
+ text-decoration : none;
+ background: $button;
+ color: $buttonfont;
+ padding : 10px;
+ }
+
+ .consult a:hover {
+   border-style: solid;
+   border-color: $button;
+   background: $buttonfont;
+   color: $button;
+}
 
 /* cards for closets, garages and small spaces pages */
 
@@ -94,7 +113,7 @@ a:hover {
 .testimonials p::before, .testimonials p::after {
     content: "“";
     position: absolute;
-    color: $putty;
+    color: $accent;
     font-size: em(100px);
 }
 

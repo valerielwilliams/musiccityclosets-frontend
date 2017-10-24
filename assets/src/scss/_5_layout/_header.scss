@@ -65,19 +65,21 @@ header {
 			text-align: center;
 
 
-
-
 			> a {
 				color: $primary;
 				text-decoration: none;
-
 
 				&:hover {
 					background: $accent;
 					color: $primary;
 
-				}
+									}
 			}
 		}
 	}
+}
+
+.contact a {
+	border: 2px solid $brightblue;
+	padding: 5px;
 }
