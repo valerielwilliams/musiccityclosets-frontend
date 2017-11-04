@@ -806,16 +806,12 @@ header {
   align-items: center; }
 
 .hero_container h1 {
-  position: absolute;
   color: #ffffff;
   font-size: 3.125em;
   font-weight: 400;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px; }
 
-/* h1.hidden{
-    visibility: hidden;
-} */
 h2 {
   font-weight: 400;
   font-size: 1.5em;
@@ -838,7 +834,7 @@ a:hover {
 .intro p {
   margin-bottom: 40px; }
 
-/*buttons for scheduling a consultation on home and about us pages */
+/* buttons for scheduling a consultation on Home and About pages */
 .consult {
   text-align: center; }
 
@@ -854,7 +850,7 @@ a:hover {
   background: #ffffff;
   color: #2e5c8e; }
 
-/* cards for closets, garages and small spaces pages */
+/* cards for Home, Closets, Garages and Small Spaces pages */
 .card-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -889,14 +885,13 @@ a:hover {
   align-items: center; }
 
 .card__img p {
-  position: absolute;
   color: #ffffff;
   font-size: 2.5em;
   font-weight: 300;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px; }
 
-/* styling for testimonials on index and about pages */
+/* styling for testimonials on Home, About and Contact pages */
 .testimonials p {
   font-weight: 200;
   font-style: italic;
@@ -926,7 +921,7 @@ a:hover {
   font-family: "sofia-pro";
   font-size: 1.75em;
   background: #000000;
-  color: white;
+  color: #ffffff;
   padding-left: 20px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -977,22 +972,6 @@ ul.social-media {
 li {
   float: left; }
 
-/*------------------------------------*    HOVER EFFECT ON HOME PAGE IMGS
-\*------------------------------------*/
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.design__img:hover .image {
-  opacity: 0.3; }
-
 /*------------------------------------*    BACK TO TOP BUTTON
 \*------------------------------------*/
 .cd-top.cd-is-visible {
@@ -1015,7 +994,7 @@ li {
   /* image replacement properties */
   text-indent: 100%;
   white-space: nowrap;
-  background: rgba(46, 92, 142, 0.8) url(assets/dist/img/cd-top-arrow.svg) no-repeat center 50%;
+  background: rgba(46, 92, 142, 0.8) url(../img/cd-top-arrow.svg) no-repeat center 50%;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
@@ -1093,6 +1072,158 @@ input.button:hover {
   background: #fff;
   color: #09C;
 }*/
+/*------------------------------------*    BACKGROUND IMAGES
+\*------------------------------------*/
+/* Home Page */
+div.hero_container.home {
+  background: url(../img/closet_home.jpg) center center;
+  background-size: cover;
+  min-height: 600px; }
+
+.card__img.closet {
+  background: url(../img/closet_small.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.garage {
+  background: url(../img/garage_small.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.ss {
+  background: url(../img/ss_small.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+/* Closets Page */
+div.hero_container.closets {
+  background: url(../img/elegant.jpg) center center;
+  background-size: cover;
+  min-height: 600px; }
+
+.card__img.belt {
+  background: url(../img/belt_rack.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.tie {
+  background: url(../img/tie_rack.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.purse {
+  background: url(../img/purse_hooks.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.hampers {
+  background: url(../img/hampers.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.jewelry {
+  background: url(../img/jewelry_tray.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.valet {
+  background: url(../img/valet_rods.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+/* Garages Page */
+div.hero_container.garages {
+  background: url(../img/garage_mini.jpg) center center;
+  background-size: cover;
+  min-height: 600px; }
+
+.card__img.cabinets {
+  background: url(../img/cabinets.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.workbenches {
+  background: url(../img/workbench.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.hooks {
+  background: url(../img/hooks.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.racks {
+  background: url(../img/bike_rack.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.pegboards {
+  background: url(../img/pegboard.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.shelves {
+  background: url(../img/shelving.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+/* Small Spaces Page*/
+div.hero_container.small_spaces {
+  background: url(../img/pantry.jpg) center center;
+  background-size: cover;
+  min-height: 600px; }
+
+.card__img.pantries {
+  background: url(../img/pantries.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.wine_racks {
+  background: url(../img/wine_rack.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.shoe_closets {
+  background: url(../img/shoe_closet.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.benches {
+  background: url(../img/bench.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.home_offices {
+  background: url(../img/office.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+.card__img.small_space {
+  background: url(../img/ss_small.jpg) center center;
+  background-size: cover;
+  min-height: 288px; }
+
+/* Gallery, Blog, About Us and Contact Pages */
+div.hero_container.gallery {
+  background: url(../img/gallery.jpg) center center;
+  background-size: cover;
+  min-height: 600px; }
+
+div.hero_container.blog {
+  background: url(../img/blog.jpg) center center;
+  background-size: cover;
+  min-height: 600px; }
+
+div.hero_container.about {
+  background: url(../img/about_us.jpg) center center;
+  background-size: cover;
+  min-height: 600px; }
+
+div.hero_container.contact {
+  background: url(../img/contact.jpg) center center;
+  background-size: cover;
+  min-height: 600px; }
+
 /*------------------------------------*    #PAGES
 \*------------------------------------*/
 /* space between intro and about section */
@@ -1112,18 +1243,17 @@ input.button:hover {
   padding-left: 20px; }
 
 /* Let Wayne and Cece design something for you*/
-.design-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+.card-wrapper a {
+  color: #ffffff;
+  border-style: solid;
+  font-size: 2.5em;
+  font-weight: 300;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px; }
 
-.design-wrapper a:hover {
-  background: #1fa5ce; }
+.card-wrapper a:hover {
+  background: #1fa5ce;
+  text-decoration: none; }
 
 /*------------------------------------*    GALLERY
 \*------------------------------------*/

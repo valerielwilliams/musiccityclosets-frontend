@@ -36,12 +36,12 @@ header {
 }
 
 .vcard a:link {
-	color: $brightblue;
+	color: $link;
 	text-decoration: none;
 }
 
 .vcard a:hover{
-	color: $brightblue;
+	color: $link;
 	text-decoration: underline;
 }
 
@@ -80,6 +80,6 @@ header {
 }
 
 .contact a {
-	border: 2px solid $brightblue;
+	border: 2px solid $link;
 	padding: 5px;
 }

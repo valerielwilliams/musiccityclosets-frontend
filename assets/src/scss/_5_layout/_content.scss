@@ -13,18 +13,12 @@
  }
 
 .hero_container h1 {
-  position: absolute;
-  color: $white;
+  color: $herofont;
   font-size: em(50px);
   font-weight: $regular;
   background: rgba(0,0,0, 0.5);
   padding: 10px;
  }
-
-
-/* h1.hidden{
-    visibility: hidden;
-} */
 
 h2 {
     font-weight: $regular;
@@ -41,12 +35,12 @@ p {
 }
 
 a:link, a:visited {
-	color: $brightblue;
+	color: $link;
 	text-decoration: none;
 }
 
 a:hover {
-	color: $brightblue;
+	color: $link;
 	text-decoration: underline;
 }
 
@@ -55,7 +49,7 @@ a:hover {
     margin-bottom: 40px;
 }
 
-/*buttons for scheduling a consultation on home and about us pages */
+/* buttons for scheduling a consultation on Home and About pages */
 .consult {
     text-align: center;
 }
@@ -75,7 +69,8 @@ a:hover {
    color: $button;
 }
 
-/* cards for closets, garages and small spaces pages */
+/* cards for Home, Closets, Garages and Small Spaces pages */
+
 
 .card-wrapper {
     display: flex;
@@ -92,8 +87,7 @@ a:hover {
 }
 
 .card__img p {
-    position: absolute;
-    color: $white;
+    color: $herofont;
     font-size: em(40px);
     font-weight: $light;
     background: rgba(0,0,0, 0.5);
@@ -101,7 +95,7 @@ a:hover {
 }
 
 
-/* styling for testimonials on index and about pages */
+/* styling for testimonials on Home, About and Contact pages */
 
 .testimonials p {
     font-weight: $extralight;

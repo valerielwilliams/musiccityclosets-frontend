@@ -22,12 +22,17 @@
 
 /* Let Wayne and Cece design something for you*/
 
-.design-wrapper {
-     display: flex;
-     justify-content: space-between;
-
+.card-wrapper a {
+    color: $buttonfont;
+    border-style: solid;
+    font-size: em(40px);
+    font-weight: $light;
+    background: rgba(0,0,0, 0.5);
+    padding: 10px;
 }
 
-.design-wrapper a:hover {
-    background: $brightblue;
+
+.card-wrapper a:hover {
+    background: $link;
+    text-decoration: none;
 }
