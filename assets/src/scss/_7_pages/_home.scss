@@ -1,7 +1,15 @@
 
 /* space between intro and about section */
 .welcome p {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+
+    @include breakpoint(small) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(regular-screen) {
+        margin-bottom: 80px;
+    }
 }
 
 
