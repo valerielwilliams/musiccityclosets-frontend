@@ -7,24 +7,87 @@
 }
 
 .hero_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 
 .hero_container h1 {
-  color: $herofont;
-  font-size: em(50px);
-  font-weight: $regular;
-  background: rgba(0,0,0, 0.5);
-  padding: 10px;
- }
+    color: $herofont;
+    font-size: em(50px);
+    font-weight: $regular;
+    background: rgba(0,0,0, 0.5);
+    padding: 10px;
+
+    @include breakpoint(medium) {
+        font-size: em(45px);
+    }
+
+    @include breakpoint(landscape) {
+        font-size: em(45px);
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(40px);
+    }
+
+    @include breakpoint(portrait) {
+        font-size: em(35px);
+    }
+
+    @include breakpoint(small) {
+        font-size: em(30px);
+    }
+
+    @include breakpoint(large-mobile) {
+        font-size: em(24px);
+    }
+
+    @include breakpoint(mobile) {
+    font-size: em(20px);
+    padding-left: 5px;
+  }
+}
 
 h2 {
     font-weight: $regular;
     font-size: em(24px);
     text-align: center;
     margin: 50px 0 50px 0;
+
+    @include breakpoint(regular-screen) {
+        font-size: em(24px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(landscape) {
+        font-size: em(23px);
+        padding-left: 10px;
+    }
+    @include breakpoint(medium) {
+        font-size: em(23px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(22px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(small) {
+        font-size: em(20px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(large-mobile) {
+        font-size: em(18px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(mobile) {
+        font-size: em(16px);
+        padding-left: 10px;
+    }
 }
 
 
@@ -32,6 +95,54 @@ p {
     font-weight: $medium;
     font-size: em(18px);
     line-height: 1.25em;
+
+    @include breakpoint(regular-screen) {
+        font-size: em(18px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(landscape) {
+        font-size: em(17px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(medium) {
+        font-size: em(17px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(16px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(portrait) {
+        font-size: em(16px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(small) {
+        font-size: em(14px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(large-mobile) {
+        font-size: em(14px);
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    @include breakpoint(mobile) {
+		font-size: em(12px);
+		padding-left: 10px;
+        padding-bottom: 15px;
+	}
 }
 
 a:link, a:visited {
@@ -59,7 +170,8 @@ a:hover {
  text-decoration : none;
  background: $button;
  color: $buttonfont;
- padding : 10px;
+ padding: 10px;
+
  }
 
  .consult a:hover {
@@ -84,6 +196,18 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include breakpoint(small) {
+        flex: 0 0 calc(50%);
+    }
+
+    @include breakpoint(large-mobile) {
+		flex: 0 0 calc(50%);
+	}
+
+    @include breakpoint(mobile) {
+		flex: 0 0 calc(75%);
+	}
 }
 
 .card__img p {
@@ -92,6 +216,27 @@ a:hover {
     font-weight: $light;
     background: rgba(0,0,0, 0.5);
     padding: 10px;
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(32px);
+    }
+
+    @include breakpoint(portrait) {
+        font-size: em(30px);
+    }
+
+    @include breakpoint(small) {
+        font-size: em(25px);
+    }
+
+    @include breakpoint(large-mobile) {
+        font-size: em(25px);
+    }
+
+    @include breakpoint(mobile) {
+        font-size: em(25px);
+    }
+
 }
 
 
@@ -102,6 +247,34 @@ a:hover {
     font-style: $style-italic;
     font-size: em(36px);
     padding: 50px;
+
+    @include breakpoint(landscape) {
+        font-size: em(35px);
+    }
+
+    @include breakpoint(medium) {
+        font-size: em(35px);
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(34px);
+    }
+
+    @include breakpoint(portrait) {
+        font-size: em(34px);
+    }
+
+    @include breakpoint(small) {
+		font-size: em(34px);
+	}
+
+    @include breakpoint(large-mobile) {
+		font-size: em(28px);
+	}
+
+    @include breakpoint(mobile) {
+		font-size: em(26px);
+	}
 }
 
 .testimonials p::before, .testimonials p::after {
@@ -109,6 +282,41 @@ a:hover {
     position: absolute;
     color: $accent;
     font-size: em(100px);
+
+    @include breakpoint(landscape) {
+        font-size: em(90px);
+        padding-left: 30px;
+    }
+    @include breakpoint(medium) {
+        font-size: em(90px);
+        padding-left: 30px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(85px);
+        padding-left: 30px;
+    }
+
+    @include breakpoint(portrait) {
+        font-size: em(85px);
+        padding-left: 30px;
+    }
+
+    @include breakpoint(small) {
+		font-size: em(85px);
+        padding-left: 30px;
+	}
+
+    @include breakpoint(large-mobile) {
+		font-size: em(80px);
+        padding-left: 30px;
+	}
+
+    @include breakpoint(mobile) {
+		font-size: em(75px);
+        padding-left: 30px;
+	}
+
 }
 
 

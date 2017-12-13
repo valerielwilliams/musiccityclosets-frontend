@@ -2,14 +2,6 @@
 /* space between intro and about section */
 .welcome p {
     margin-bottom: 20px;
-
-    @include breakpoint(small) {
-        margin-bottom: 40px;
-    }
-
-    @include breakpoint(regular-screen) {
-        margin-bottom: 80px;
-    }
 }
 
 
@@ -21,12 +13,43 @@
 
 .about_clarks h2 {
     text-align: left;
+
+    @include breakpoint(small) {
+        text-align: center;
+    }
+
+    @include breakpoint(large-mobile) {
+        text-align: center;
+    }
+
+    @include breakpoint(mobile) {
+        text-align: center;
+   }
 }
+
 
 .about_clarks img {
     float: right;
     padding-left: 20px;
+
+    @include breakpoint(small) {
+        width: 425px;
+        padding-bottom: em(10px);
+    }
+
+    @include breakpoint(large-mobile) {
+        width: 425px;
+        padding-bottom: em(10px);
+    }
+
+    @include breakpoint(mobile) {
+        width: 320px;
+        padding-bottom: em(10px);
+   }
  }
+
+
+
 
 /* Let Wayne and Cece design something for you*/
 
@@ -37,6 +60,26 @@
     font-weight: $light;
     background: rgba(0,0,0, 0.5);
     padding: 10px;
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(32px);
+    }
+
+    @include breakpoint(portrait) {
+        font-size: em(30px);
+    }
+
+    @include breakpoint(small) {
+        font-size: em(25px);
+    }
+
+    @include breakpoint(large-mobile) {
+        font-size: em(25px);
+    }
+
+    @include breakpoint(mobile) {
+        font-size: em(25px);
+    }
 }
 
 

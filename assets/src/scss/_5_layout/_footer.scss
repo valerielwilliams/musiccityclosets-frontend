@@ -13,7 +13,40 @@
 	justify-content: space-between;
 	margin-top: 40px;
 
+	@include breakpoint(landscape) {
+		font-size: em(26px);
+		padding-left: em(10px);
+	}
 
+	@include breakpoint(medium) {
+		font-size: em(26px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(smaller-screen) {
+		font-size: em(24px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(portrait) {
+		font-size: em(22px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(small) {
+		font-size: em(20px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(large-mobile) {
+		font-size: em(18px);
+		padding-left: em(10px);
+	}
+
+	@include breakpoint(mobile) {
+		font-size: em(16px);
+		padding-left: em(10px);
+	}
 
 	a {
 		color: $accent;
@@ -32,6 +65,49 @@
 			height: 75px;
 			width: 75px;
 			padding-left: 20px;
+
+			@include breakpoint(landscape) {
+				height: 60px;
+				width: 60px;
+				padding-left: 10px;
+			}
+
+			@include breakpoint(medium) {
+				height: 60px;
+				width: 60px;
+				padding-left: 10px;
+			}
+
+			@include breakpoint(smaller-screen) {
+				height: 50px;
+				width: 50px;
+				padding-left: 5px;
+			}
+
+			@include breakpoint(portrait) {
+				height: 50px;
+				width: 50px;
+				padding-left: 5px;
+			}
+
+			@include breakpoint(small) {
+				height: 40px;
+				width: 40px;
+				padding-left: 5px;
+			}
+
+
+			@include breakpoint(large-mobile) {
+				height: 35px;
+				width: 35px;
+				padding-left: 5px;
+			}
+
+			@include breakpoint(mobile) {
+				height: 30px;
+				width: 30px;
+				padding-left: 5px;
+			}
 		}
 	}
 

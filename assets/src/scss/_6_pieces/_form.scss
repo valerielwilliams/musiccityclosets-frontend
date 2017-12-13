@@ -16,6 +16,34 @@ form {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+
+  @include breakpoint(medium) {
+      width: 500px;
+  }
+  @include breakpoint(landscape) {
+      width: 500px;
+  }
+
+  @include breakpoint(smaller-screen) {
+      width: 450px;
+  }
+
+  @include breakpoint(portrait) {
+      width: 400px;
+  }
+
+  @include breakpoint(small) {
+      width: 350px;
+  }
+
+  @include breakpoint(large-mobile) {
+      width: 275px;
+  }
+
+  @include breakpoint(mobile) {
+      width: 250px;
+  }
+
 }
 
 input {
@@ -24,12 +52,66 @@ input {
   border: 1px solid #999;
   height: 25px;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+
+  @include breakpoint(medium) {
+      width: 450px;
+  }
+  @include breakpoint(landscape) {
+      width: 450px;
+  }
+
+  @include breakpoint(smaller-screen) {
+      width: 400px;
+  }
+
+  @include breakpoint(portrait) {
+      width: 350px;
+  }
+
+  @include breakpoint(small) {
+      width: 325px;
+  }
+
+  @include breakpoint(large-mobile) {
+      width: 250px;
+  }
+
+  @include breakpoint(mobile) {
+      width: 225px;
+  }
 }
 
 textarea#feedback {
   width: 375px;
   height: 150px;
   display: block;
+
+  @include breakpoint(medium) {
+      width: 450px;
+  }
+  @include breakpoint(landscape) {
+      width: 450px;
+  }
+
+  @include breakpoint(smaller-screen) {
+      width: 400px;
+  }
+
+  @include breakpoint(portrait) {
+      width: 350px;
+  }
+
+  @include breakpoint(small) {
+      width: 325px;
+  }
+
+  @include breakpoint(large-mobile) {
+      width: 250px;
+  }
+
+  @include breakpoint(mobile) {
+      width: 225px;
+  }
 }
 
 /*button {
