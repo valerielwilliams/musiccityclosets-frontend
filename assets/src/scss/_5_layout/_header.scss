@@ -161,8 +161,6 @@ header {
 		@include no-bullets;
 		display: flex;
 
-
-
 		> li {
 			flex: 1;
 			font-weight: $semibold;
@@ -248,4 +246,55 @@ header {
 		height: 30px;
 		width: 30px;
 	}
+}
+
+.mobile-nav {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: -100%;
+	bottom: 100%;
+	transition: bottom 0.25s ease-in-out,
+		top 0.25s ease-in-out;
+	z-index: map-get($zindex, mobile-nav);
+
+	&.open {
+		bottom: 0;
+		top: 0;
+	}
+
+
+	&__close {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+
+	ul {
+		@include no-bullets;
+		display: flex;
+		flex-direction: column;
+		background: rgba(0,0,0, 0.75);
+
+
+		> li {
+			flex: 1;
+			font-weight: $semibold;
+			font-size: em(20px);
+			text-align: center;
+			line-height: 2em;
+
+			> a {
+				color: $herofont;
+				text-decoration: none;
+
+				&:hover {
+					background: $accent;
+					color: $primary;
+
+									}
+			}
+		}
+	}
+
 }

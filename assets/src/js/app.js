@@ -12,18 +12,22 @@ function SiteController($)
 {
 	self.init = function()
 	{
-		initFitVid();
+		initMobileNav();
 	}
 
-	// MAKES VIDEOS RESIZE RESPONSIVELY
-	function initFitVid() {
+	function initMobileNav() {
+		// CLICK ON TRIGGER, OPEN THE MOBILE NAV
+		$('.js-mobile-trigger').click(function(e) {
+			e.preventDefault();
+		$('.js-mobile-nav').addClass('open');
+		});
 
-		// TARGET YOUTUBE
-		$('iframe[src*="youtube"]').parent().fitVids();
 
-		// TARGET VIMEO
-		$('iframe[src*="vimeo"]').parent().fitVids();
-
+		//CLICK ON CLOSE BUTTON, CLOSE MOBILE NAV
+		$('.js-mobile-nav-close').click(function(e) {
+			e.preventDefault();
+		$('.js-mobile-nav').removeClass('open');
+		});
 	}
 
 	return self;

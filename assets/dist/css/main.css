@@ -921,6 +921,53 @@ header {
     height: 30px;
     width: 30px; }
 
+.mobile-nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -100%;
+  bottom: 100%;
+  -webkit-transition: bottom 0.25s ease-in-out, top 0.25s ease-in-out;
+  -o-transition: bottom 0.25s ease-in-out, top 0.25s ease-in-out;
+  transition: bottom 0.25s ease-in-out, top 0.25s ease-in-out;
+  z-index: 9001; }
+  .mobile-nav.open {
+    bottom: 0;
+    top: 0; }
+  .mobile-nav__close {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+  .mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.75); }
+    .mobile-nav ul > li {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      font-weight: 600;
+      font-size: 1.25em;
+      text-align: center;
+      line-height: 2em; }
+      .mobile-nav ul > li > a {
+        color: #ffffff;
+        text-decoration: none; }
+        .mobile-nav ul > li > a:hover {
+          background: #c7b299;
+          color: #000000; }
+
 /*------------------------------------*    #CONTENT
 \*------------------------------------*/
 .main {
