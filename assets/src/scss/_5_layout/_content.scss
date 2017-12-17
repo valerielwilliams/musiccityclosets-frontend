@@ -74,6 +74,11 @@ h2 {
         padding-left: 10px;
     }
 
+    @include breakpoint(portrait) {
+        font-size: em(21px);
+        padding-left: 10px;
+    }
+
     @include breakpoint(small) {
         font-size: em(20px);
         padding-left: 10px;
@@ -87,6 +92,7 @@ h2 {
     @include breakpoint(mobile) {
         font-size: em(16px);
         padding-left: 10px;
+        margin: 50px 0 25px 0;
     }
 }
 
@@ -115,12 +121,6 @@ p {
     }
 
     @include breakpoint(smaller-screen) {
-        font-size: em(16px);
-        padding-left: 10px;
-        padding-bottom: 15px;
-    }
-
-    @include breakpoint(portrait) {
         font-size: em(16px);
         padding-left: 10px;
         padding-bottom: 15px;
@@ -158,6 +158,10 @@ a:hover {
 
 .intro p {
     margin-bottom: 40px;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 20px;
+    }
 }
 
 /* buttons for scheduling a consultation on Home and About pages */
@@ -217,12 +221,20 @@ a:hover {
     background: rgba(0,0,0, 0.5);
     padding: 10px;
 
-    @include breakpoint(smaller-screen) {
+    @include breakpoint(medium) {
         font-size: em(32px);
     }
 
+    @include breakpoint(landscape) {
+        font-size: em(32px);
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(28px);
+    }
+
     @include breakpoint(portrait) {
-        font-size: em(30px);
+        font-size: em(27px);
     }
 
     @include breakpoint(small) {
@@ -246,34 +258,41 @@ a:hover {
     font-weight: $extralight;
     font-style: $style-italic;
     font-size: em(36px);
-    padding: 50px;
+    padding: 40px;
 
     @include breakpoint(landscape) {
         font-size: em(35px);
+        padding: 40px;
     }
 
     @include breakpoint(medium) {
         font-size: em(35px);
+        padding: 40px;
     }
 
     @include breakpoint(smaller-screen) {
         font-size: em(34px);
+        padding: 40px;
     }
 
     @include breakpoint(portrait) {
         font-size: em(34px);
+        padding: 40px;
     }
 
     @include breakpoint(small) {
 		font-size: em(34px);
+        padding: 34px;
 	}
 
     @include breakpoint(large-mobile) {
 		font-size: em(28px);
+        padding: 32px;
 	}
 
     @include breakpoint(mobile) {
-		font-size: em(26px);
+		font-size: em(25px);
+        padding: 30px;
 	}
 }
 
@@ -285,49 +304,43 @@ a:hover {
 
     @include breakpoint(landscape) {
         font-size: em(90px);
-        padding-left: 30px;
     }
+
     @include breakpoint(medium) {
         font-size: em(90px);
-        padding-left: 30px;
     }
 
     @include breakpoint(smaller-screen) {
         font-size: em(85px);
-        padding-left: 30px;
     }
 
     @include breakpoint(portrait) {
         font-size: em(85px);
-        padding-left: 30px;
     }
 
     @include breakpoint(small) {
 		font-size: em(85px);
-        padding-left: 30px;
-	}
+    }
 
     @include breakpoint(large-mobile) {
 		font-size: em(80px);
-        padding-left: 30px;
 	}
 
     @include breakpoint(mobile) {
 		font-size: em(75px);
-        padding-left: 30px;
-	}
+    }
 
 }
 
 
 .testimonials p::before {
-    top: 5rem;
-    left: -2rem;
+    top: 3rem;
+    left: 0rem;
     z-index: -1;
 }
 
 .testimonials p::after {
     content: "”";
     bottom: 1rem;
-    right: 3rem;
+    right: 2rem;
 }

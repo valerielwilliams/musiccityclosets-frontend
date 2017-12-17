@@ -854,12 +854,10 @@ header {
     margin: 0;
     padding: 0;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     .nav ul > li {
       -webkit-box-flex: 1;
-      -webkit-flex: 1;
       -ms-flex: 1;
       flex: 1;
       font-weight: 600;
@@ -943,18 +941,15 @@ header {
     margin: 0;
     padding: 0;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.75); }
     .mobile-nav ul > li {
       -webkit-box-flex: 1;
-      -webkit-flex: 1;
       -ms-flex: 1;
       flex: 1;
       font-weight: 600;
@@ -976,15 +971,12 @@ header {
 
 .hero_container {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
 
@@ -1038,6 +1030,10 @@ h2 {
     h2 {
       font-size: 1.375em;
       padding-left: 10px; } }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.3125em;
+      padding-left: 10px; } }
   @media (max-width: 640px) {
     h2 {
       font-size: 1.25em;
@@ -1049,7 +1045,8 @@ h2 {
   @media (max-width: 360px) {
     h2 {
       font-size: 1em;
-      padding-left: 10px; } }
+      padding-left: 10px;
+      margin: 50px 0 25px 0; } }
 
 p {
   font-weight: 500;
@@ -1071,11 +1068,6 @@ p {
       padding-left: 10px;
       padding-bottom: 15px; } }
   @media (max-width: 800px) {
-    p {
-      font-size: 1em;
-      padding-left: 10px;
-      padding-bottom: 15px; } }
-  @media (max-width: 768px) {
     p {
       font-size: 1em;
       padding-left: 10px;
@@ -1106,6 +1098,9 @@ a:hover {
 
 .intro p {
   margin-bottom: 40px; }
+  @media (max-width: 360px) {
+    .intro p {
+      margin-bottom: 20px; } }
 
 /* buttons for scheduling a consultation on Home and About pages */
 .consult {
@@ -1126,52 +1121,42 @@ a:hover {
 /* cards for Home, Closets, Garages and Small Spaces pages */
 .card-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
 
 .card__img {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 calc(33.33% - 30px);
   -ms-flex: 0 0 calc(33.33% - 30px);
   flex: 0 0 calc(33.33% - 30px);
   /* courtesy of Stack Overflow at https://stackoverflow.com/questions/37461794/aligning-images-on-two-rows-with-flexbox */
   margin: 5px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
   @media (max-width: 640px) {
     .card__img {
       -webkit-box-flex: 0;
-      -webkit-flex: 0 0 calc(50%);
       -ms-flex: 0 0 calc(50%);
       flex: 0 0 calc(50%); } }
   @media (max-width: 480px) {
     .card__img {
       -webkit-box-flex: 0;
-      -webkit-flex: 0 0 calc(50%);
       -ms-flex: 0 0 calc(50%);
       flex: 0 0 calc(50%); } }
   @media (max-width: 360px) {
     .card__img {
       -webkit-box-flex: 0;
-      -webkit-flex: 0 0 calc(75%);
       -ms-flex: 0 0 calc(75%);
       flex: 0 0 calc(75%); } }
 
@@ -1181,12 +1166,18 @@ a:hover {
   font-weight: 300;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px; }
-  @media (max-width: 800px) {
+  @media (max-width: 1024px) {
     .card__img p {
       font-size: 2em; } }
+  @media (max-width: 1024px) {
+    .card__img p {
+      font-size: 2em; } }
+  @media (max-width: 800px) {
+    .card__img p {
+      font-size: 1.75em; } }
   @media (max-width: 768px) {
     .card__img p {
-      font-size: 1.875em; } }
+      font-size: 1.6875em; } }
   @media (max-width: 640px) {
     .card__img p {
       font-size: 1.5625em; } }
@@ -1202,28 +1193,35 @@ a:hover {
   font-weight: 200;
   font-style: italic;
   font-size: 2.25em;
-  padding: 50px; }
+  padding: 40px; }
   @media (max-width: 1024px) {
     .testimonials p {
-      font-size: 2.1875em; } }
+      font-size: 2.1875em;
+      padding: 40px; } }
   @media (max-width: 1024px) {
     .testimonials p {
-      font-size: 2.1875em; } }
+      font-size: 2.1875em;
+      padding: 40px; } }
   @media (max-width: 800px) {
     .testimonials p {
-      font-size: 2.125em; } }
+      font-size: 2.125em;
+      padding: 40px; } }
   @media (max-width: 768px) {
     .testimonials p {
-      font-size: 2.125em; } }
+      font-size: 2.125em;
+      padding: 40px; } }
   @media (max-width: 640px) {
     .testimonials p {
-      font-size: 2.125em; } }
+      font-size: 2.125em;
+      padding: 34px; } }
   @media (max-width: 480px) {
     .testimonials p {
-      font-size: 1.75em; } }
+      font-size: 1.75em;
+      padding: 32px; } }
   @media (max-width: 360px) {
     .testimonials p {
-      font-size: 1.625em; } }
+      font-size: 1.5625em;
+      padding: 30px; } }
 
 .testimonials p::before, .testimonials p::after {
   content: "“";
@@ -1232,42 +1230,35 @@ a:hover {
   font-size: 6.25em; }
   @media (max-width: 1024px) {
     .testimonials p::before, .testimonials p::after {
-      font-size: 5.625em;
-      padding-left: 30px; } }
+      font-size: 5.625em; } }
   @media (max-width: 1024px) {
     .testimonials p::before, .testimonials p::after {
-      font-size: 5.625em;
-      padding-left: 30px; } }
+      font-size: 5.625em; } }
   @media (max-width: 800px) {
     .testimonials p::before, .testimonials p::after {
-      font-size: 5.3125em;
-      padding-left: 30px; } }
+      font-size: 5.3125em; } }
   @media (max-width: 768px) {
     .testimonials p::before, .testimonials p::after {
-      font-size: 5.3125em;
-      padding-left: 30px; } }
+      font-size: 5.3125em; } }
   @media (max-width: 640px) {
     .testimonials p::before, .testimonials p::after {
-      font-size: 5.3125em;
-      padding-left: 30px; } }
+      font-size: 5.3125em; } }
   @media (max-width: 480px) {
     .testimonials p::before, .testimonials p::after {
-      font-size: 5em;
-      padding-left: 30px; } }
+      font-size: 5em; } }
   @media (max-width: 360px) {
     .testimonials p::before, .testimonials p::after {
-      font-size: 4.6875em;
-      padding-left: 30px; } }
+      font-size: 4.6875em; } }
 
 .testimonials p::before {
-  top: 5rem;
-  left: -2rem;
+  top: 3rem;
+  left: 0rem;
   z-index: -1; }
 
 .testimonials p::after {
   content: "”";
   bottom: 1rem;
-  right: 3rem; }
+  right: 2rem; }
 
 /*------------------------------------*    #FOOTER
 \*------------------------------------*/
@@ -1279,15 +1270,12 @@ a:hover {
   color: #ffffff;
   padding-left: 20px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 40px; }
