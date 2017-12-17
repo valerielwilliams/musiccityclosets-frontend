@@ -1429,101 +1429,31 @@ li {
   background-color: #e86256;
   opacity: 1; }
 
-/*------------------------------------*    FORM courtesy of https://www.sitepoint.com/style-web-forms-css/
+/*------------------------------------*    FORM
 \*------------------------------------*/
-form {
-  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  background: -o-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  margin: auto;
-  position: relative;
-  width: 550px;
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 10px;
-  border: 1px solid #999;
-  border: inset 1px solid #333;
-  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center; }
-  @media (max-width: 1024px) {
-    form {
-      width: 500px; } }
-  @media (max-width: 1024px) {
-    form {
-      width: 500px; } }
-  @media (max-width: 800px) {
-    form {
-      width: 450px; } }
-  @media (max-width: 768px) {
-    form {
-      width: 400px; } }
-  @media (max-width: 640px) {
-    form {
-      width: 350px; } }
-  @media (max-width: 480px) {
-    form {
-      width: 275px; } }
-  @media (max-width: 360px) {
-    form {
-      width: 250px; } }
-
-input {
-  width: 375px;
+label {
   display: block;
-  border: 1px solid #999;
-  height: 25px;
-  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3); }
-  @media (max-width: 1024px) {
-    input {
-      width: 450px; } }
-  @media (max-width: 1024px) {
-    input {
-      width: 450px; } }
-  @media (max-width: 800px) {
-    input {
-      width: 400px; } }
-  @media (max-width: 768px) {
-    input {
-      width: 350px; } }
-  @media (max-width: 640px) {
-    input {
-      width: 325px; } }
-  @media (max-width: 480px) {
-    input {
-      width: 250px; } }
-  @media (max-width: 360px) {
-    input {
-      width: 225px; } }
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  position: relative;
+  top: 45px;
+  -webkit-transition: top 0.5s ease-in-out;
+  -o-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out; }
+  label.out-of-the-way {
+    top: 0; }
 
-textarea#feedback {
-  width: 375px;
-  height: 150px;
-  display: block; }
-  @media (max-width: 1024px) {
-    textarea#feedback {
-      width: 450px; } }
-  @media (max-width: 1024px) {
-    textarea#feedback {
-      width: 450px; } }
-  @media (max-width: 800px) {
-    textarea#feedback {
-      width: 400px; } }
-  @media (max-width: 768px) {
-    textarea#feedback {
-      width: 350px; } }
-  @media (max-width: 640px) {
-    textarea#feedback {
-      width: 325px; } }
-  @media (max-width: 480px) {
-    textarea#feedback {
-      width: 250px; } }
-  @media (max-width: 360px) {
-    textarea#feedback {
-      width: 225px; } }
+input[type=text],
+input[type=email],
+input[type=phone],
+textarea {
+  background: #c7b299;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding: 15px;
+  width: 100%; }
 
 /*button {
   width: 100px;

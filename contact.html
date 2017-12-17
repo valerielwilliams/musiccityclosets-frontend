@@ -93,37 +93,29 @@
             <h2>Let Wayne and Cece design a storage solution just for you.</h2>
         </div>
 
-        <div>
-            <form action="/action_page.php">
-                <label>
-                    <p>Name<input id="name" type="text" name="name" placeholder="First Name and Last Name, please"/></p>
-                </label>
+        <div class="contact-form">
+            <form action="">
+                <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+                </div>
 
-                <label>
-                    <p>Street Address<input id="address" type="text" name="street_address" placeholder="Street Address"/></p>
-                </label>
+                <div class="form-field">
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" value="">
+                </div>
 
-                <label>
-                    <p>City<input id="city" type="text" name="city"/></p>
-                </label>
+                <div class="form-field">
+                <label for="phonenumber">Phone Number</label>
+                <input type="phone" name="phonenumber" id="phonenumber" value="">
+                </div>
 
-                <label>
-                    <p>State<input id="state" type="text" name="state"/></p>
-                </label>
-
-                <label>
-                    <p>Zip Code<input id="zip_code" type="text" name="zip_code"/></p>
-                </label>
-
-                <label>
-                    <p>Email Address<input id="email" type="text" name="email" /></p>
-                </label>
-
-                <label>
-                    <p>How can we help you?<textarea id="feedback" name="feedback"></textarea></p>
-                    <input type="button" value="Submit Form" />
-                </label>
-  </form>
+                <div class="form-field">
+                <label for="textarea">How can we help you?</label>
+                <textarea rows="5"></textarea>
+                </div>
+                <input type="button" value="Submit Form" />
+            </form>
 
         </div>
 
@@ -189,9 +181,7 @@
     <a href="#0" class="cd-top">Top</a>
 
       <!--Javascript-->
-    <script src="assets/dist/js/jquery-3.2.1.min.js" charset="utf-8"></script>
-    <script src="assets/dist/js/backtotop.js" charset="utf-8"></script>
-    <script src="assets/dist/js/production.js" charset="utf-8"></script>
-    <script src="assets/src/js/app.js" charset="utf-8"></script>
+    <script src="assets/dist/js/app.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </body>
 </html>

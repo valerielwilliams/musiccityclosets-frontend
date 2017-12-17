@@ -1,118 +1,37 @@
 /*------------------------------------*\
-    FORM courtesy of https://www.sitepoint.com/style-web-forms-css/
+    FORM
 \*------------------------------------*/
 
 form {
-  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  margin: auto;
-  position: relative;
-  width: 550px;
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 10px;
-  border: 1px solid #999;
-  border: inset 1px solid #333;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
 
-  @include breakpoint(medium) {
-      width: 500px;
-  }
-  @include breakpoint(landscape) {
-      width: 500px;
-  }
-
-  @include breakpoint(smaller-screen) {
-      width: 450px;
-  }
-
-  @include breakpoint(portrait) {
-      width: 400px;
-  }
-
-  @include breakpoint(small) {
-      width: 350px;
-  }
-
-  @include breakpoint(large-mobile) {
-      width: 275px;
-  }
-
-  @include breakpoint(mobile) {
-      width: 250px;
-  }
 
 }
 
-input {
-  width: 375px;
-  display: block;
-  border: 1px solid #999;
-  height: 25px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+label {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+    top: 45px;
+    transition: top 0.5s ease-in-out;
 
-  @include breakpoint(medium) {
-      width: 450px;
-  }
-  @include breakpoint(landscape) {
-      width: 450px;
-  }
-
-  @include breakpoint(smaller-screen) {
-      width: 400px;
-  }
-
-  @include breakpoint(portrait) {
-      width: 350px;
-  }
-
-  @include breakpoint(small) {
-      width: 325px;
-  }
-
-  @include breakpoint(large-mobile) {
-      width: 250px;
-  }
-
-  @include breakpoint(mobile) {
-      width: 225px;
-  }
+    &.out-of-the-way {
+        top: 0;
+    }
 }
 
-textarea#feedback {
-  width: 375px;
-  height: 150px;
-  display: block;
-
-  @include breakpoint(medium) {
-      width: 450px;
-  }
-  @include breakpoint(landscape) {
-      width: 450px;
-  }
-
-  @include breakpoint(smaller-screen) {
-      width: 400px;
-  }
-
-  @include breakpoint(portrait) {
-      width: 350px;
-  }
-
-  @include breakpoint(small) {
-      width: 325px;
-  }
-
-  @include breakpoint(large-mobile) {
-      width: 250px;
-  }
-
-  @include breakpoint(mobile) {
-      width: 225px;
-  }
+input[type=text],
+input[type=email],
+input[type=phone],
+textarea {
+    background: $putty;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 100%;
 }
+
 
 /*button {
   width: 100px;
