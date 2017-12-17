@@ -2179,6 +2179,26 @@ div.hero_container.contact {
   grid-gap: 10px;
   justify-items: center; }
 
+@media (max-width: 800px) {
+  .gallery_wrapper img {
+    width: 95%; } }
+
+@media (max-width: 768px) {
+  .gallery_wrapper img {
+    width: 95%; } }
+
+@media (max-width: 640px) {
+  .gallery_wrapper img {
+    width: 95%; } }
+
+@media (max-width: 480px) {
+  .gallery_wrapper img {
+    width: 95%; } }
+
+@media (max-width: 360px) {
+  .gallery_wrapper img {
+    width: 95%; } }
+
 /*------------------------------------*    BLOG
 \*------------------------------------*/
 .blog_wrapper {
@@ -2188,3 +2208,31 @@ div.hero_container.contact {
   grid-gap: 20px;
   justify-items: center;
   margin-top: 40px; }
+
+@media (max-width: 1024px) {
+  .blog_wrapper img {
+    width: 95%; } }
+
+@media (max-width: 1024px) {
+  .blog_wrapper img {
+    width: 95%; } }
+
+@media (max-width: 800px) {
+  .blog_wrapper img {
+    width: 95%; } }
+
+@media (max-width: 768px) {
+  .blog_wrapper img {
+    width: 95%; } }
+
+@media (max-width: 640px) {
+  .blog_wrapper img {
+    width: 95%; } }
+
+@media (max-width: 480px) {
+  .blog_wrapper img {
+    width: 95%; } }
+
+@media (max-width: 360px) {
+  .blog_wrapper img {
+    width: 95%; } }

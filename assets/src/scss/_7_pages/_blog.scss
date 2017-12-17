@@ -11,3 +11,35 @@
   margin-top: 40px;
 
  }
+ .blog_wrapper img {
+
+
+     @include breakpoint(landscape) {
+         width: 95%;
+     }
+
+     @include breakpoint(medium) {
+         width: 95%;
+     }
+
+     @include breakpoint(smaller-screen) {
+         width: 95%;
+     }
+
+     @include breakpoint(portrait) {
+         width: 95%;
+     }
+
+     @include breakpoint(small) {
+         width: 95%;
+     }
+
+     @include breakpoint(large-mobile) {
+         width: 95%;
+     }
+
+
+     @include breakpoint(mobile) {
+ 		width: 95%;
+ 	}
+}
