@@ -3,38 +3,158 @@
 \*------------------------------------*/
 /* Home Page */
 
-div.hero_container.home {
-    background: url(../img/closet_home.jpg) center center;
-    background-size: cover;
-    min-height: 600px;
+div.hero_container.home img {
+    /*background: url(../img/closet_home.jpg) center center;
+    background-size: cover;*/
+    height: 600px;
 
     @include breakpoint(medium) {
-        min-height: 500px;
+        height: 500px;
     }
     @include breakpoint(landscape) {
-        min-height: 500px;
+        height: 500px;
     }
 
     @include breakpoint(smaller-screen) {
-        min-height: 400px;
+        height: 400px;
     }
 
     @include breakpoint(portrait) {
-        min-height: 375px;
+        height: 375px;
     }
 
     @include breakpoint(small) {
-        min-height: 300px;
+        height: 300px;
     }
 
     @include breakpoint(large-mobile) {
-        min-height: 225px;
+        height: 225px;
     }
 
     @include breakpoint(mobile) {
-		min-height: 175px;
-	}
+        height: 175px;
+    }
+
 }
+
+div.hero_container.home h1 {
+    position: absolute;
+    top: 22%;
+    left: 22%;
+
+
+    @include breakpoint(medium) {
+        top: 19%;
+        left: 20%;
+    }
+    @include breakpoint(landscape) {
+        top: 19%;
+        left: 19%;
+    }
+
+    @include breakpoint(smaller-screen) {
+        top: 17%;
+        left: 17%;
+    }
+
+    @include breakpoint(portrait) {
+        top: 17%;
+        left: 17%;
+    }
+
+    @include breakpoint(small) {
+        top: 13%;
+        left: 17%;
+    }
+
+    @include breakpoint(large-mobile) {
+        top: 12%;
+        left: 16%;
+    }
+
+    @include breakpoint(mobile) {
+        top: 12%;
+        left: 10%;
+    }
+
+}
+
+
+.mySlides {
+    display:none;
+    }
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: $putty;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1.6s ease;
+
+  @include breakpoint(medium) {
+      height: 12px;
+      width: 12px;
+  }
+
+  @include breakpoint(landscape) {
+      height: 12px;
+      width: 12px;
+  }
+
+  @include breakpoint(smaller-screen) {
+      height: 10px;
+      width: 10px;
+  }
+
+  @include breakpoint(portrait) {
+      height: 9px;
+      width: 9px;
+  }
+
+  @include breakpoint(large-mobile) {
+      height: 8px;
+      width: 8px;
+  }
+
+  @include breakpoint(mobile) {
+      height: 7px;
+      width: 7px;
+  }
+}
+
+.dots {
+    text-align:center;
+}
+
+.active {
+  background-color: $brightblue;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* Cards for home page */
+
 
 .card__img.closet {
     background: url(../img/closet_small.jpg) center center;

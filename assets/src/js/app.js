@@ -1,6 +1,7 @@
-//@prepros-prepend jquery-3.2.1.js
+//@prepros-prepend jquery-3.2.1.min.js
 //@prepros-prepend backtotop.js
 //@prepros-prepend production.js
+
 
 jQuery ( function ($) {
 
