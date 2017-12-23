@@ -8,42 +8,35 @@
 /* About Wayne and Cece */
 .about_clarks {
     background: $accent;
-    padding: 20px;
+    padding: 10px 10px 70px 10px;
+
 }
 
 .about_clarks h2 {
-    text-align: left;
-
-    @include breakpoint(small) {
-        text-align: center;
-    }
-
-    @include breakpoint(large-mobile) {
-        text-align: center;
-    }
-
-    @include breakpoint(mobile) {
-        text-align: center;
-   }
+    margin: 0;
 }
 
 
 .about_clarks img {
     float: right;
-    padding-left: 20px;
+    padding:  0px 10px;
+
 
     @include breakpoint(small) {
         width: 425px;
+        padding-left: em(10px);
         padding-bottom: em(10px);
     }
 
     @include breakpoint(large-mobile) {
         width: 425px;
+        padding-right: em(20px);
         padding-bottom: em(10px);
     }
 
     @include breakpoint(mobile) {
         width: 320px;
+        padding-right: em(10px);
         padding-bottom: em(10px);
    }
  }

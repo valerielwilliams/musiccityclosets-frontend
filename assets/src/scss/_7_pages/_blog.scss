@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 20px;
+  grid-gap: 30px;
   justify-items: center;
   margin-top: 40px;
 
@@ -41,4 +41,52 @@
      @include breakpoint(mobile) {
  		width: 95%;
  	}
+}
+
+.blog_wrapper h2 {
+    text-align: left;
+    margin: 10px 0 10px 0;
+
+}
+
+
+
+.blog_wrapper h3 {
+    font-style: $style-italic;
+    font-size: em(18px);
+
+    @include breakpoint(regular-screen) {
+        font-size: em(18px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(landscape) {
+        font-size: em(17px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(medium) {
+        font-size: em(17px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(smaller-screen) {
+        font-size: em(16px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(small) {
+        font-size: em(14px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(large-mobile) {
+        font-size: em(14px);
+        padding-left: 10px;
+    }
+
+    @include breakpoint(mobile) {
+		font-size: em(12px);
+		padding-left: 10px;
+    }
 }
