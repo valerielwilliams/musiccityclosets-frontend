@@ -2210,7 +2210,7 @@ div.hero_container.contact {
 /* About Wayne and Cece */
 .about_clarks {
   background: #c7b299;
-  padding: 10px 10px 70px 10px; }
+  padding: 10px 10px 60px 10px; }
 
 .about_clarks h2 {
   margin: 0; }
@@ -2233,6 +2233,9 @@ div.hero_container.contact {
       width: 320px;
       padding-right: 0.625em;
       padding-bottom: 0.625em; } }
+
+.about_clarks p {
+  padding-bottom: 20px; }
 
 /* Let Wayne and Cece design something for you*/
 .card-wrapper a {
